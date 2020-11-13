@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montez&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&family=Nunito:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mogra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+
+/* css reset  */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* compnents */
+.button {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 15px;
+    border: none;
+    border-radius: 70px;
+}
+.button-white {
+    color: black;
+    background-color: white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.329);
+}
+
+/* end of components */
+
+
+/* navbar */
+nav.navbar {
+    background-color: greenyellow;
+}
+nav.navbar > div.container {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+nav.navbar .title {
+    display: flex;
+}
+
+nav.navbar .navigation a:not(:last-child) {
+    margin-right: 25px;
+    color: black;
+    
+}
+nav.navbar .navigation a:not(.button):hover {
+    border-bottom: 1px solid black;
+}
+/* end of navbar */
+.daftarberhasil{
+    background-color: rgb(247, 247, 108);
+
+}
+
+.image1{
+    margin-left: 800px;
+}
+.kata{
+    background: url('yellow.png') no-repeat center ;
+    height: 50px;
+    text-align: center;
+    font-size: larger;
+    padding: 25px;
+    padding-top: 50px;
+
+}
+.centangijo{
+    position: relative;
+    left: 42%;
+    margin-top: 3 0px;
+}
+.berhasil{
+    text-align: center;
+    font-size: larger;
+    margin-top: 30px;
+}
+.terimakasih{
+    text-align: center;
+    font-size: medium;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-top: 10px;
+    padding: 10px;
+}
+.serah{
+    background-image: url('yellow2.jpg');
+    height: max-content;
+}
+.copyright{
+    background-color: greenyellow;
+    color: black;
+    font-size: large;
+    text-align: center;
+}
+.tanggal{
+    font-family: 'Oleo Script', cursive;
+    color: green;
+    font-size: larger;
+}

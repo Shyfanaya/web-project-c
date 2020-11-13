@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montez&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&family=Nunito:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mogra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+
+/* css reset  */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* compnents */
+.button {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 15px;
+    border: none;
+    border-radius: 70px;
+}
+.button-white {
+    color: black;
+    background-color: white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.329);
+}
+
+/* end of components */
+
+
+/* navbar */
+nav.navbar {
+    background-color: greenyellow;
+    width: 1400px;
+}
+nav.navbar > div.container {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+nav.navbar .title {
+    display: flex;
+}
+
+nav.navbar .navigation a:not(:last-child) {
+    margin-right: 25px;
+    color: black;
+    
+}
+nav.navbar .navigation a:not(.button):hover {
+    border-bottom: 1px solid black;
+}
+/* end of navbar */
+
+nav ul li a {
+    color: #000000;
+    font-size: 36px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+a:hover{
+    background: #4ef334;
+    transition: .5s;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    justify-content: center;
+    height: 600px;    
+    background-color: #fdff70;
+    align-items: center;
+    font-family: Nunito;
+}
+
+.login{
+    background-color: #44d42c;
+    width:600px;
+    text-align: center;
+    padding: 50px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 3px solid #000000;
+    margin-top: 80px;
+    margin-left: 350px;
+}
+
+.login h2{
+    margin: 0 0 50px;
+    width: 100%;
+    font-size: 46px;
+}
+
+.login .input-group{
+    position: relative;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.login .input-group input{
+    height: 63px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-size: 36px;
+    border: 3px solid #000000;
+    border-radius: 25px;
+}
+
+.login .input-group span{
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    padding: 0px;
+    text-transform: capitalize;
+    background-color: #ffffff;
+    transition: 0.5s;
+}
+
+.login .input-group input:focus ~ span,
+.login .input-group input:valid ~ span{
+    top: -12px;
+    left: 20px;
+    font-size: 12px;
+    background-color: #44d52c;
+    padding: 2px 4px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.login .input-group input[type="submit"]{
+    background-color: #f6fa07;
+    border: none;
+    text-transform: uppercase;
+    font-weight: lighter;
+    cursor: pointer;
+    width: 35%;
+    transition: 0.5;
+}
+
+.login .input-group input[type="submit"]:hover{
+    width: 100%;
+    background-color: #f6fa07;
+    color: black;
+}
+
+.submit{
+    margin: 50px 0 0;
+}
