@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&family=Nunito:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mogra&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
 
 /* css reset  */
 * {
@@ -36,11 +35,9 @@ a {
 
 /* end of components */
 
-
 /* navbar */
 nav.navbar {
     background-color: greenyellow;
-    width: 1400px;
 }
 nav.navbar > div.container {
     padding: 20px 0;
@@ -61,63 +58,51 @@ nav.navbar .navigation a:not(.button):hover {
 }
 /* end of navbar */
 
-nav ul li a {
-    color: #000000;
+.Isi {
+    background-color:  rgb(247, 247, 108);
+    height: 580px;
+}
+
+.JenisSayur {
+    background-color: #ffffff;
+    border: 5px solid #44d42d;
+    width: 300px;
     font-size: 36px;
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 7px 13px;
-    border-radius: 3px;
+    padding: 30px;   
 }
-
-a:hover{
-    background: #4ef334;
-    transition: .5s;
-}
-
-body{
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    justify-content: center;
-    height: 600px;    
-    background-color: #fdff70;
-    align-items: center;
-    font-family: Nunito;
-}
-
-
-.form{
-    background-color: #44d42c;
-    width:600px;
-    height: 300px;
+.penjelasan{
+    background-color: greenyellow;
+    padding-right: 100px;
     text-align: center;
-    padding: 30px;
-    box-sizing: border-box;
-    border-radius: 25px;
-    border: 3px solid #000000;
-    margin-top: 80px;
-    margin-left: 380px;
-    font-size: 25px;
 }
-.email{
-    margin-left: 10px;
-    margin-right: 150px;
+.Gambar{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 70px;
+    width: 900px;
+    height: 350px;
+    left: 520px;
 }
-.imeil{
-    margin-left: 10px;
+
+.Penjelasan{
+    display: flex;
+    text-align: justify;
+    font-size: 20px;
+    margin-top: 100px;
+
 }
-.pass{
-    margin-left: 10px;
-    margin-right: 150px;
+.klikdisini{
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    
 }
-.passwrd{
-    margin-left: 10px;
-}
-.submit{
-    margin-left: 90px;
-    margin-right: 100px;
-    font-size: 25px;
+
+.copyright{
+    background-color: greenyellow;
+    color: black;
+    font-size: large;
+    text-align: center;
+    margin-top: 0px
 }
