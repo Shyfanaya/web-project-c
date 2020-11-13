@@ -35,7 +35,6 @@ a {
 
 /* end of components */
 
-
 /* navbar */
 nav.navbar {
     background-color: greenyellow;
@@ -59,17 +58,45 @@ nav.navbar .navigation a:not(.button):hover {
 }
 /* end of navbar */
 
-.body{
-   background-color:greenyellow;
+.Isi {
+    background-color:  rgb(247, 247, 108);
+    height: 665px;
 }
-.form{
-    width: 50%;
-    margin: auto;
-    background-color: #44D42C;
-    color: white;
+
+.JenisBuah {
+    background-color: #ffffff;
+    border: 5px solid #44d42d;
+    width: 300px;
+    font-size: 30px;
+    padding: 30px;   
+}
+.caramerawat{
+    background-color: greenyellow;
+    padding-right: 100px;
+    text-align: center;
+}
+.Gambar{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 70px;
+    width: 900px;
+    height: 350px;
+    left: 520px;
+}
+
+.Penjelasan{
+    display: flex;
+    text-align: justify;
     font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 100px;
+    padding: 10px;
 }
-.table{
-    margin: auto;
+
+.copyright{
+    background-color: greenyellow;
+    color: black;
+    font-size: large;
+    text-align: center;
+    margin-top: 0px;
 }
