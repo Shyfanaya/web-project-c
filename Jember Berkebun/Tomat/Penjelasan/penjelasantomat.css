@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montez&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&family=Nunito:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mogra&display=swap');
+
+/* css reset  */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* compnents */
+.button {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 15px;
+    border: none;
+    border-radius: 70px;
+}
+.button-white {
+    color: black;
+    background-color: white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.329);
+}
+
+/* end of components */
+
+
+/* navbar */
+nav.navbar {
+    background-color: greenyellow;
+}
+nav.navbar > div.container {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+nav.navbar .title {
+    display: flex;
+}
+
+nav.navbar .navigation a:not(:last-child) {
+    margin-right: 25px;
+    color: black;
+    
+}
+nav.navbar .navigation a:not(.button):hover {
+    border-bottom: 1px solid black;
+}
+/* end of navbar */
+
+.Isi {
+    background-color:  rgb(247, 247, 108);
+    height: 680px;
+}
+
+.JenisBuah {
+    background-color: #ffffff;
+    border: 5px solid #44d42d;
+    width: 300px;
+    font-size: 30px;
+    padding: 30px;   
+}
+.penjelasan{
+    background-color: greenyellow;
+    padding-right: 100px;
+    text-align: center;
+}
+.Gambar{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 70px;
+    width: 700px;
+    height: 350px;
+    left: 520px;
+}
+
+.Penjelasan{
+    display: flex;
+    text-align: justify;
+    font-size: 20px;
+    margin-top: 100px;
+    padding: 30px;
+
+}
+
+.copyright{
+    background-color: greenyellow;
+    color: black;
+    font-size: large;
+    text-align: center;
+    margin-top: 0px;
+}
