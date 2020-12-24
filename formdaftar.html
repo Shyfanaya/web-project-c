@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style_form.css">
-    <title>Form Login</title>
+    <title>Log In</title>
     <link rel="stylesheet" href="formdaftar.css">
 </head>
 <body>
@@ -23,28 +19,58 @@
         </div>
     </nav>
     <!-- end of navbar -->
-    
-    <div class="form"> 
-        <table>
-            <center><h1>Daftar Event</h1></center>
-            <tr>
-                <td><label class="imeil" for="Email"> Email </label></td>
-                <td><input class="email" type="text" placeholder:"Email"  ></td>
-            </tr>
-            <br>
-            <tr>
-                <td><label class="passwrd" for="Password">Password</label></td>
-                <td><input class="pass" type="password" placeholder:"Password"  ></td>
-            </tr>
-            <tr>
-                <td><a href="Daftar Berhasil.html"><input class="submit" type="submit" name="daftar" value="Daftar"></td>
-            </tr>
-        </table>
-        
+    <div class="daftar">
+        <form name="biodata" method="POST" action="Daftar Berhasil.html">
+            <pre>
+            <div class="form">
+                <h1>Daftar Event</h1>
+                Username         <input id="username" placeholder="Enter Username" type="text" name="username">
+                Password          <input id="password" placeholder="Enter Password" type="password" name="password">
+                <div class="merah">Invalid Username or Password.</div>
+                <center>
+                    <a href="Daftar Berhasil.html"><button  class="button" data-toggle="modal" type="button" onclick="validate()">Log In</button></a>
+                </center>
+            </pre>
+            </div>
+        </form>
     </div>
+    
+    <div class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <center>
+                        <h2>Log In Success!</h2>
+                    </center>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="copyright">
         (c) copyright 2020 by Jember Berkebun
-      </div>
-    
+    </div>
+
+    <script>
+        // var user = "";
+        // var pass = "";
+        // var error="";
+        // var Login = document.getElementsByClassName('button');
+
+        function validate() {
+            let a = document.forms ['biodata'] ['username'].value;
+            let b = document.forms ['biodata'] ['password'].value;
+            let merah = document.querySelector('.merah');
+
+            if (a!=null && b == null){
+                alert('gu')
+            }
+            else{
+               alert('dwu')
+            }
+        }
+     
+    </script>
 </body>
 </html>
