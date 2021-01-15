@@ -26,9 +26,8 @@
                 <h1>Daftar Event</h1>
                 Username         <input id="username" placeholder="Enter Username" type="text" name="username">
                 Password          <input id="password" placeholder="Enter Password" type="password" name="password">
-                <div class="merah">Invalid Username or Password.</div>
                 <center>
-                    <a href="Daftar Berhasil.html"><button  class="button" data-toggle="modal" type="button" onclick="validate()">Log In</button></a>
+                    <a href="Daftar Berhasil.html"> <button  class="button" data-toggle="modal" type="button" onclick="validate()">Log In</button> </a></a>
                 </center>
             </pre>
             </div>
@@ -40,7 +39,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <center>
-                        <h2>Log In Success!</h2>
+                        <h2> Segera Diproses!</h2>
                     </center>
                         
                 </div>
@@ -52,25 +51,30 @@
         (c) copyright 2020 by Jember Berkebun
     </div>
 
+
     <script>
-        // var user = "";
-        // var pass = "";
-        // var error="";
-        // var Login = document.getElementsByClassName('button');
+        var Login = document.getElementsByClassName('button');
 
         function validate() {
-            let a = document.forms ['biodata'] ['username'].value;
-            let b = document.forms ['biodata'] ['password'].value;
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
             let merah = document.querySelector('.merah');
+                let button = document.querySelector('button[data-toggle = "modal"]');
+                let modal = document.querySelector('.modal');
+        
 
-            if (a!=null && b == null){
-                alert('gu')
-            }
-            else{
-               alert('dwu')
-            }
+                modal.classList.add('show');
+
+                modal.addEventListener('click', function(){
+                    this.classList.remove('show');
+                }
+                );
+
+                modal.querySelector('.modal-content').addEventListener ('click', function() {
+                    e.stopPropragation();
+                }
+                );
         }
-     
     </script>
 </body>
 </html>
